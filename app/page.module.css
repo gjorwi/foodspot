@@ -147,11 +147,8 @@
 
 /* Sponsors Section */
 .sponsorsSection {
-  background: #FFFFFF;
+  background: transparent;
   padding: 0.7rem 1rem;
-  margin-inline: 1rem;
-  border-radius: var(--radius-lg);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   margin-bottom: 0.7rem;
   overflow: hidden;
   position: relative;
@@ -189,10 +186,11 @@
 
 .sponsorCard {
   background: white;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-sm);
   padding: 0.75rem 1rem;
   display: flex;
   align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   justify-content: center;
   min-width: 60px;
   transition: var(--transition);
@@ -215,9 +213,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 0.75rem;
   padding: 0.5rem 0.5rem;
-  background: #FFFFFF;
-  border-radius: var(--radius-lg);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background: transparent;
   margin-inline: 1rem;
   margin-bottom: 0.7rem;
 }
@@ -227,11 +223,12 @@
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  background: none;
+  background: var(--surface);
   border: none;
   padding: 0.75rem 0.5rem;
   cursor: pointer;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   transition: var(--transition);
 }
 
@@ -254,7 +251,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #F5F5F5 !important;
+  background: var(--surface) !important;
   transition: var(--transition);
 }
 
@@ -269,12 +266,10 @@
 
 /* Mobile Section */
 .mobileSection {
-  padding: 1.5rem 0;
-  background: #FFFFFF;
+  padding: 1rem 0;
+  background: transparent;
   margin-inline: 1rem;
-  border-radius: var(--radius-lg);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0rem;
 }
 
 .sectionHeader {
@@ -340,8 +335,9 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.625rem 1rem;
-  background: var(--surface-alt);
+  background: var(--surface);
   border-radius: var(--radius-xl);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   white-space: nowrap;
   cursor: pointer;
   transition: var(--transition);
@@ -384,7 +380,8 @@
 /* Nearby Card */
 .nearbyCard {
   min-width: 140px;
-  background: var(--surface-alt);
+  background: var(--surface);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: var(--radius-lg);
   padding: 1rem;
   display: flex;
