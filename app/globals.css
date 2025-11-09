@@ -2,30 +2,30 @@
   /* Color Palette - Food Psychology Theme */
   /* Colores cálidos que estimulan el apetito y la felicidad */
   
-  --primary: #FF6B35;        /* Naranja energético - Estimula apetito */
-  --primary-dark: #E85A2A;   /* Naranja profundo */
-  --primary-light: #FFB59A;  /* Naranja suave */
+  --primary: #fc3b00;        /* Naranja intenso - Estimula apetito */
+  --primary-dark: #E64A19;   /* Naranja profundo */
+  --primary-light: #FF8A65;  /* Naranja suave */
   
-  --secondary: #FFD93D;      /* Amarillo dorado - Alegría y optimismo */
-  --secondary-dark: #F5C518; /* Dorado intenso */
-  --secondary-light: #FFE88C; /* Amarillo cremoso */
+  --secondary: #FFC107;      /* Amarillo dorado intenso - Alegría y optimismo */
+  --secondary-dark: #FFA000; /* Dorado intenso */
+  --secondary-light: #FFD54F; /* Amarillo cremoso */
   
-  --accent: #FF4757;         /* Rojo vibrante - Pasión por la comida */
-  --accent-dark: #E63946;    /* Rojo profundo */
-  --accent-light: #FF6B7A;   /* Rosa coral */
+  --accent: #F44336;         /* Rojo intenso - Pasión por la comida */
+  --accent-dark: #D32F2F;    /* Rojo profundo */
+  --accent-light: #EF5350;   /* Rosa coral */
   
   --success: #2ECC71;        /* Verde fresco - Saludable */
   --warning: #FFA502;        /* Naranja cálido */
   --error: #FF4757;          /* Rojo alerta */
   
-  --background: #FFFFFF;     /* Blanco puro - Limpieza y frescura */
+  --background: white;     /* Blanco puro - Limpieza y frescura */
   --surface: #FFFFFF;        /* Blanco superficie */
   --surface-hover: #FFF8F5;  /* Blanco cálido hover */
   --surface-alt: #FFF5F0;    /* Superficie alternativa cálida */
   
-  --text-primary: #1A1A1A;   /* Negro suave - Más fuerte y legible */
-  --text-secondary: #4A4A4A; /* Gris oscuro - Más fuerte */
-  --text-tertiary: #8A8A8A;  /* Gris medio */
+  --text-primary: #000000;   /* Negro puro - Máxima legibilidad */
+  --text-secondary: #333333; /* Gris muy oscuro */
+  --text-tertiary: #666666;  /* Gris medio */
   
   --border: #F0F0F0;         /* Borde muy sutil */
   --border-hover: #E0E0E0;   /* Borde hover */
@@ -47,12 +47,12 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* Forzamos los mismos colores del modo claro */
-    --background: #FFFFFF;
+    --background: white;
     --surface: #FFFFFF;
     --surface-hover: #FFF8F5;
     --surface-alt: #FFF5F0;
     
-    --text-primary: #2C3E50;
+    --text-primary: #090e13;
     --text-secondary: #7F8C8D;
     --text-tertiary: #BDC3C7;
     
@@ -66,8 +66,8 @@
   }
   
   body {
-    background: #FFFFFF !important;
-    color: #2C3E50 !important;
+    background: white !important;
+    color: #090e13 !important;
   }
 }
 
@@ -77,19 +77,19 @@ body {
   overflow-x: hidden;
   height: 100%;
   -webkit-tap-highlight-color: transparent;
-  background-color: #FFFFFF !important;
+  background-color: white !important;
 }
 
 body {
   color: var(--text-primary);
-  background: #FFFFFF !important;
+  background: white !important;
   font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
   touch-action: pan-y;
   overscroll-behavior-y: contain;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 * {
