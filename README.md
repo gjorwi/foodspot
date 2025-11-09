@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍽️ FoodSpot - Descubre Sabores
 
-## Getting Started
+Una Progressive Web App (PWA) móvil para descubrir los mejores lugares de comida cerca de ti, con recomendaciones auténticas de personas reales.
 
-First, run the development server:
+## ✨ Características
+
+- 📱 **Diseño Mobile-First**: Optimizado exclusivamente para dispositivos móviles
+- 🗺️ **Geolocalización**: Encuentra lugares cerca de tu ubicación actual
+- ⭐ **Sistema de Valoraciones**: Puntuaciones y comentarios de la comunidad
+- 📋 **Menús Digitales**: Visualiza los menús de cada restaurante
+- 💾 **PWA**: Instalable como app nativa en tu teléfono
+- 🎨 **UI Moderna**: Interfaz intuitiva con animaciones suaves
+- 🌙 **Modo Oscuro**: Soporte automático para tema claro/oscuro
+
+## 🎨 Paleta de Colores (Psicología del Color)
+
+Colores cálidos diseñados para estimular el apetito y crear una experiencia alegre:
+
+- **Primario**: Naranja Energético (#FF6B35) - Estimula el apetito
+- **Secundario**: Amarillo Dorado (#FFD93D) - Alegría y optimismo
+- **Acento**: Rojo Vibrante (#FF4757) - Pasión por la comida
+- **Fondo**: Blanco Puro (#FFFFFF) - Limpieza y frescura
+- **Texto**: Azul Oscuro Suave (#2C3E50) - Legibilidad sin ser agresivo
+
+## 🚀 Inicio Rápido
+
+Instala las dependencias:
+
+```bash
+npm install
+```
+
+Ejecuta el servidor de desarrollo:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador móvil o usa las herramientas de desarrollador en modo móvil.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📱 Instalación como PWA
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Abre la app en tu navegador móvil
+2. Toca el menú del navegador
+3. Selecciona "Agregar a pantalla de inicio"
+4. ¡Listo! Ahora tienes FoodSpot como app nativa
 
-## Learn More
+## 🛠️ Tecnologías
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js 14.2.33** - Framework React
+- **React 18** - Biblioteca UI
+- **Lucide React** - Iconos
+- **CSS Modules** - Estilos
+- **Inter Font** - Tipografía
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📂 Estructura del Proyecto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+fooddiscovery/
+├── app/
+│   ├── components/
+│   │   └── Logo.js          # Componente del logo
+│   ├── globals.css          # Estilos globales
+│   ├── layout.js            # Layout principal
+│   ├── page.js              # Página principal (Dashboard)
+│   └── page.module.css      # Estilos del dashboard
+├── public/
+│   └── manifest.json        # Configuración PWA
+└── package.json
+```
 
-## Deploy on Vercel
+## 🎯 Próximas Funcionalidades
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [ ] Integración con API de mapas
+- [ ] Sistema de autenticación
+- [ ] Subida de fotos de platos
+- [ ] Sistema de reservas
+- [ ] Notificaciones push
+- [ ] Modo offline
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 Licencia
+
+Este proyecto es de código abierto.

@@ -1,12 +1,73 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Color Palette - Food Psychology Theme */
+  /* Colores cálidos que estimulan el apetito y la felicidad */
+  
+  --primary: #FF6B35;        /* Naranja energético - Estimula apetito */
+  --primary-dark: #E85A2A;   /* Naranja profundo */
+  --primary-light: #FFB59A;  /* Naranja suave */
+  
+  --secondary: #FFD93D;      /* Amarillo dorado - Alegría y optimismo */
+  --secondary-dark: #F5C518; /* Dorado intenso */
+  --secondary-light: #FFE88C; /* Amarillo cremoso */
+  
+  --accent: #FF4757;         /* Rojo vibrante - Pasión por la comida */
+  --accent-dark: #E63946;    /* Rojo profundo */
+  --accent-light: #FF6B7A;   /* Rosa coral */
+  
+  --success: #2ECC71;        /* Verde fresco - Saludable */
+  --warning: #FFA502;        /* Naranja cálido */
+  --error: #FF4757;          /* Rojo alerta */
+  
+  --background: #FFFFFF;     /* Blanco puro - Limpieza y frescura */
+  --surface: #FFFFFF;        /* Blanco superficie */
+  --surface-hover: #FFF8F5;  /* Blanco cálido hover */
+  --surface-alt: #FFF5F0;    /* Superficie alternativa cálida */
+  
+  --text-primary: #1A1A1A;   /* Negro suave - Más fuerte y legible */
+  --text-secondary: #4A4A4A; /* Gris oscuro - Más fuerte */
+  --text-tertiary: #8A8A8A;  /* Gris medio */
+  
+  --border: #F0F0F0;         /* Borde muy sutil */
+  --border-hover: #E0E0E0;   /* Borde hover */
+  
+  --shadow-sm: 0 2px 4px rgba(255, 107, 53, 0.08);
+  --shadow-md: 0 4px 12px rgba(255, 107, 53, 0.12);
+  --shadow-lg: 0 8px 24px rgba(255, 107, 53, 0.15);
+  --shadow-xl: 0 12px 32px rgba(255, 107, 53, 0.18);
+  
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Deshabilitamos el modo oscuro para mantener la app siempre clara y fresca */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Forzamos los mismos colores del modo claro */
+    --background: #FFFFFF;
+    --surface: #FFFFFF;
+    --surface-hover: #FFF8F5;
+    --surface-alt: #FFF5F0;
+    
+    --text-primary: #2C3E50;
+    --text-secondary: #7F8C8D;
+    --text-tertiary: #BDC3C7;
+    
+    --border: #F0F0F0;
+    --border-hover: #E0E0E0;
+    
+    --shadow-sm: 0 2px 4px rgba(255, 107, 53, 0.08);
+    --shadow-md: 0 4px 12px rgba(255, 107, 53, 0.12);
+    --shadow-lg: 0 8px 24px rgba(255, 107, 53, 0.15);
+    --shadow-xl: 0 12px 32px rgba(255, 107, 53, 0.18);
+  }
+  
+  body {
+    background: #FFFFFF !important;
+    color: #2C3E50 !important;
   }
 }
 
@@ -14,14 +75,21 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #FFFFFF !important;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-primary);
+  background: #FFFFFF !important;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  touch-action: pan-y;
+  overscroll-behavior-y: contain;
+  font-weight: 500;
 }
 
 * {
@@ -35,8 +103,39 @@ a {
   text-decoration: none;
 }
 
+/* Mobile Touch Optimizations */
+button, a, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input, textarea, select {
+  font-size: 16px; /* Prevents zoom on iOS */
+}
+
+/* Smooth Scrolling */
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide Scrollbars but Keep Functionality */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+/* Pull-to-Refresh Prevention */
+body {
+  overscroll-behavior-y: contain;
+}
+
+/* Forzamos siempre el esquema de color claro */
+html {
+  color-scheme: light !important;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    color-scheme: light !important;
   }
 }
