@@ -561,12 +561,13 @@
   transform: translateX(-50%);
   width: 100%;
   max-width: 480px;
-  background: #FFFFFF;
+  background: var(--primary);
   border-top: 1px solid #F0F0F0;
   display: flex;
   justify-content: space-around;
   padding: 0.5rem 0;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   z-index: 100;
 }
 
@@ -579,7 +580,7 @@
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
-  color: var(--text-primary);
+  color: var(--surface);
   transition: var(--transition);
   flex: 1;
   max-width: 100px;
@@ -596,6 +597,8 @@
 
 .navButtonActive {
   color: var(--primary);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
   position: relative;
 }
 
