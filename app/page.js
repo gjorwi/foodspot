@@ -150,26 +150,26 @@ export default function Home() {
         {/* Quick Actions */}
         <div className={styles.quickActions}>
           <button className={styles.quickActionButton}>
-            <div className={styles.quickActionIcon} style={{ background: 'var(--primary)' }}>
-              <Navigation size={20} color="white" />
+            <div className={styles.quickActionIcon}>
+              <Navigation size={20} />
             </div>
             <span>Cerca de mí</span>
           </button>
           <button className={styles.quickActionButton}>
-            <div className={styles.quickActionIcon} style={{ background: 'var(--secondary)' }}>
-              <TrendingUp size={20} color="white" />
+            <div className={styles.quickActionIcon}>
+              <TrendingUp size={20} />
             </div>
             <span>Populares</span>
           </button>
           <button className={styles.quickActionButton}>
-            <div className={styles.quickActionIcon} style={{ background: 'var(--accent)' }}>
-              <Star size={20} color="white" />
+            <div className={styles.quickActionIcon}>
+              <Star size={20} />
             </div>
             <span>Top Rated</span>
           </button>
           <button className={styles.quickActionButton}>
-            <div className={styles.quickActionIcon} style={{ background: 'var(--success)' }}>
-              <Clock size={20} color="white" />
+            <div className={styles.quickActionIcon}>
+              <Clock size={20} />
             </div>
             <span>Abierto</span>
           </button>

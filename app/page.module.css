@@ -245,12 +245,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #F5F5F5 !important;
   transition: var(--transition);
 }
 
 .quickActionButton:active .quickActionIcon {
+  background: #E8E8E8 !important;
   transform: scale(0.95);
-  opacity: 0.9;
+}
+
+.quickActionIcon svg {
+  color: var(--primary) !important;
 }
 
 /* Mobile Section */
