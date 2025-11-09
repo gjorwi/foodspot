@@ -149,12 +149,12 @@ export default function Home() {
 
         {/* Quick Actions */}
         <div className={styles.quickActions}>
-          <button className={styles.quickActionButton}>
+          {/* <button className={styles.quickActionButton}>
             <div className={styles.quickActionIcon}>
               <Navigation size={20} />
             </div>
             <span>Cerca de mí</span>
-          </button>
+          </button> */}
           <button className={styles.quickActionButton}>
             <div className={styles.quickActionIcon}>
               <TrendingUp size={20} />
