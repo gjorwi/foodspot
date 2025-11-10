@@ -157,19 +157,19 @@ export default function Home() {
           </button> */}
           <button className={styles.quickActionButton}>
             <div className={styles.quickActionIcon}>
-              <TrendingUp size={20} />
+              <TrendingUp size={30} />
             </div>
             <span>Populares</span>
           </button>
           <button className={styles.quickActionButton}>
             <div className={styles.quickActionIcon}>
-              <Star size={20} />
+              <Star size={30} />
             </div>
             <span>Top Rated</span>
           </button>
           <button className={styles.quickActionButton}>
             <div className={styles.quickActionIcon}>
-              <Clock size={20} />
+              <Clock size={30} />
             </div>
             <span>Abierto</span>
           </button>
